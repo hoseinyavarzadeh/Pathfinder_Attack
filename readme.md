@@ -2,7 +2,7 @@
 
 Authors:         **Hosein Yavarzadeh**, Archit Agarwal, Max Christman, Christina Garman, Daniel Genkin, Andrew Kwong, Daniel Moghimi, Deian Stefan, Kazem Taram, Dean Tullsen
 
-Source Code:     Hosein Yavarzadeh
+Source Code:     **Hosein Yavarzadeh**
 
 Email:          [hyavarzadeh@ucsd.edu](hyavarzadeh@ucsd.edu)
 
