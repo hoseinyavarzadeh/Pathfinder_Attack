@@ -1,0 +1,3 @@
+[submodule "phr-analysis-tool/cfg-explorer"]
+	path = phr-analysis-tool/cfg-explorer
+	url = https://github.com/hoseinyavarzadeh/cfg-explorer

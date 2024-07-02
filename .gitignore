@@ -1,0 +1,16 @@
+*.o
+*.ko
+*.mod
+*.mod.c
+*.cmd
+*.order
+*.symvers
+*.out
+*.csv
+*.asm
+*.svg
+source/cpugetinfo
+source/cpuinfo.txt
+source/countertypes.inc
+source/x
+.vscode/
