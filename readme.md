@@ -47,7 +47,7 @@ Within the [attack.nasm](source/attack/attack.nasm) file, you can find macro def
 ## PHR Analysis Tool
 This can be found in [PHR Analysis Tool Directory](phr-analysis-tool). 
 
-## Optional: Build Intel-IPP Library and Run Read_PHR On Encryption/Decryption Functions!
+## Optional: Build Intel-IPP Library and Run Read_PHR!
 This is only needed if you want to read the PHR (Path History Register) values of Intel-IPP encryption/decryption libraries. 
 If you want to call Intel-IPP library function, you should define "INTEL_IPP" at the begining of [PMCTestA.cpp](source/PMCTestA.cpp) file.
 ```bash
