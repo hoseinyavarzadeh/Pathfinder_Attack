@@ -13,7 +13,7 @@ This paper was published at ACM ASPLOS 2024: https://dl.acm.org/doi/10.1145/3620
 ## System Requirements
 Intel 12/13/14th Gen Intel CPUs (P-core)
 
-Note: All the attacks can be extended to previous generations of Intel CPUs, but the code must be adjusted according to the Conditional Branch Predictor (CBP) structure. To know more aboit this, please refer to our previous papers: https://halfandhalf.cpusec.org/ and https://pathfinder.cpusec.org/
+Note: All the attacks can be extended to previous generations of Intel CPUs, but the code must be adjusted according to the Conditional Branch Predictor (CBP) structure. To know more about this, please refer to our previous papers: https://halfandhalf.cpusec.org/ and https://pathfinder.cpusec.org/
 
 ## Step 1: Clone!
 To clone the repository and its submodules, use the git clone --recursive command:
