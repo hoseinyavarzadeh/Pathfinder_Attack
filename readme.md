@@ -10,6 +10,11 @@ Affiliation:    University of California San Diego (UCSD)
 
 This paper was published at ACM ASPLOS 2024: https://dl.acm.org/doi/10.1145/3620666.3651382 
 
+## System Requirements
+Intel 12/13/14th Gen Intel CPUs (P-core)
+
+Note: All the attacks can be extended to previous generations of Intel CPUs, but the code must be adjusted according to the Conditional Branch Predictor (CBP) structure. To know more aboit this, please refer to our previous papers: https://halfandhalf.cpusec.org/ and https://pathfinder.cpusec.org/
+
 ## Step 1: Clone!
 To clone the repository and its submodules, use the git clone --recursive command:
 ```
@@ -26,6 +31,11 @@ chmod a+x *.sh
 ## Step 3: Let's Run the PHR Attack!
 ```bash
 ./run.sh
+```
+
+A reasonable result should look like this (with some possible variations). Every digit shows a doublet of the Path History Register (PHR). A doublet is a 2-bit value, and within the PHR, it represents pairs of adjacent bits.
+```bash
+PHR (lsb to msb): 3 1 1 2 3 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 ```
 
 ## How Does This Work?
