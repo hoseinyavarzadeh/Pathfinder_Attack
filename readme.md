@@ -45,7 +45,7 @@ Within the [PMCTestA.cpp](source/PMCTestA.cpp) file, you'll find a function name
 Within the [attack.nasm](source/attack/attack.nasm) file, you can find macro definitions for clearing and shifting the PHR value. These macro are designed for Alder Lake (and Raptor Lake) architectures and only works in Intel CPUs. Also, you'll see macros for setting the PHR value (named as PHR_Model). In order to do Read/Write PHT entry values you should have a conditional branch with specific PC and the desired PHR value right before the branch.
 
 ## PHR Analysis Tool
-This can be found in [PHR Analysis Tool Directory](phr-analysis-tool). 
+This can be found in [PHR Analysis Tool Directory](phr-analysis-tool). Pathfinder uses the angr binary analysis tool and an algorithm to identify all potential control flow paths matching the observed PHR values. While it's not guaranteed that there will always be a single path leading to the specific PHR, our extensive analysis has shown that ambiguous results are exceedingly rare due to the PHR’s size and complex update function.
 
 ## Optional: Build Intel-IPP Library and Run Read_PHR!
 This is only needed if you want to read the PHR (Path History Register) values of Intel-IPP encryption/decryption libraries. 
